@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Alkatra";
+  min-height: 100vh;
+  min-width: 100vw;
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1679499065391-00d02902d1eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  min-width: 100vw;
+}
+.title {
+  font-size: 30px;
+}
+.icon {
+  max-width: 100%;
+}
+.temperature {
+  font-size: 50px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  row-gap: 40px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 400px;
+  height: 430px;
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(128, 161, 255, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.4px);
+  -webkit-backdrop-filter: blur(3.4px);
+  border: 1px solid rgba(128, 161, 255, 0.3);
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.input-container div {
+  display: flex;
+  gap: 8px;
+}
+.input-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+}
+.input {
+  font-size: 20px;
+  font-family: "Alkatra";
+  max-width: 200px;
+  background-color: transparent;
+  padding: 5px 10px;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+.footer h2 {
+  font-size: 30px;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
