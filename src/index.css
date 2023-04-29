@@ -65,7 +65,6 @@ body {
 .input-container div {
   display: flex;
   gap: 8px;
-  color: white;
 }
 .input-container {
   display: flex;
