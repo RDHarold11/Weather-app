@@ -65,6 +65,7 @@ body {
 .input-container div {
   display: flex;
   gap: 8px;
+  color: white;
 }
 .input-container {
   display: flex;
@@ -89,6 +90,7 @@ body {
 .footer h2 {
   font-size: 30px;
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

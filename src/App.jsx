@@ -4,6 +4,7 @@ import Weather from "./components/Weather";
 function App() {
   const [data, setData] = useState({});
   const [input, setInput] = useState("");
+  const [showData, setShowData] = useState(false)
 
   const fetchData = async (e) => {
     if (e.key === "Enter") {
@@ -12,6 +13,7 @@ function App() {
       );
       const data = await response.json();
       setData(data);
+      setShowData(true)
     }
   };
 
@@ -31,7 +33,8 @@ function App() {
         />
       </div>
       <div className="center">
-        <Weather data={data} />
+        {showData && <Weather data={data} />}
+
       </div>
     </div>
   );
